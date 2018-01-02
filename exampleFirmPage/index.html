@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html ng-app="inventoApp" ng-controller="translateCtrl as vm">
+
+<head>
+    <title>Invento software</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" href="images/favicon.ico" />
+
+    <script src="lib/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/pageStyle.css">
+    <script src="lib/jquery/dist/jquery.min.js"></script>
+    <script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="lib/angular-translate/angular-translate.min.js"></script>
+    <script src="scripts/translate.js"></script>
+    <script src="scripts/mainScript.js"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <!-- Navigation section -->
+    <nav class="navbar navbar-default navbar-fixed-top container">
+        <div class="navi-font">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#myPage">
+                    <img src="images/logo_name_150_100.png" alt="invento software" class="nav-logo-image">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#about" class="back" translate>ABOUT_US</a>
+                    </li>
+                    <li>
+                        <a href="#offer" translate>OFFER</a>
+                    </li>
+                    <li>
+                        <a href="#products" translate>PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="#partners" translate>PARTNERS</a>
+                    </li>
+                    <li>
+                        <a href="#career" translate>CAREER</a>
+                    </li>
+                    <li>
+                        <a href="#contact" translate>CONTACT</a>
+                    </li>
+                    <li>
+                        <a>
+                            <select ng-model="vm.languages" class="selectpicker main_background" title="Language" ng-change='vm.changeLanguage()'>
+                                <option value='de' translate>BUTTON_LANG_DE</option>
+                                <option value='pl' translate>BUTTON_LANG_PL</option>
+                                <option value='en' translate>BUTTON_LANG_EN</option>
+                            </select>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class=" main_logo text-center jumbotron  hidden-sm hidden-xs">
+        <img src="images/logo_150.png" alt="Invento Software">
+    </div>
+
+    <!-- About Section -->
+    <section id="about" data-speed="8" data-type="background">
+        <div id="about_section" class="container-fluid paddingSection480">
+            <div class="col-md-12 col-sm-12 containerStyle">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2 translate>ABOUT_US</h2>
+                    <h4 translate>ABOUT_US_BODY_A</h4>
+                    <h4 translate>ABOUT_US_BODY_B</h4>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <span class="glyphicon glyphicon-signal logo slideanim"></span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 containerStyle">
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <span class="glyphicon glyphicon-globe logo slideanim"></span>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h4 translate>ABOUT_US_BODY_C</h4>
+                    <h4 translate>ABOUT_US_BODY_D</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="offer" data-speed="4" data-type="background">
+        <div id="offer_section" class="container-fluid paddingSection480">
+            <div class="col-md-12 col-sm-12 containerStyle">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h2 translate>OFFER</h2>
+                    <br>
+                    <h4 translate>OFFER_BODY_A</h4>
+                    <h4 translate>OFFER_BODY_B</h4>
+                </div>
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <span class="glyphicon glyphicon-lock logo"></span>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 containerStyle">
+                <div class="col-md-4 hidden-sm hidden-xs">
+                    <span class="glyphicon glyphicon-wrench logo slideanim"></span>
+                </div>
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <h4 translate>OFFER_BODY_C</h4>
+                    <h4 translate>OFFER_BODY_D</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" data-speed="8" data-type="background">
+        <div id="products_section" class="container-fluid paddingSection480">
+            <div class="col-md-12 containerStyle lessOpacity">
+                <div class="col-md-12 col-sm-12 containerStyle lessOpacity">
+                    <h2 translate>PRODUCTS</h2>
+                    <h4 translate>PRODUCTS_BODY_D</h4>
+                </div>
+                <div class="col-md-12 col-sm-12 containerStyle lessOpacity">
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default panel_product slideanim">
+                            <div class="panel-heading text-center">
+                                <h1 class="nameProduct" translate>PRODUCTS_BODY_TITLE_A</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p translate>PRODUCTS_BODY_A</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default panel_product slideanim">
+                            <div class="panel-heading text-center">
+                                <h1 class="nameProduct" translate>PRODUCTS_BODY_TITLE_B</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p translate>PRODUCTS_BODY_B</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12 col-xs-12">
+                        <div class="panel panel-default panel_product slideanim">
+                            <div class="panel-heading text-center">
+                                <h1 class="nameProduct" translate>PRODUCTS_BODY_TITLE_C</h1>
+                            </div>
+                            <div class="panel-body">
+                                <p translate>PRODUCTS_BODY_C</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-speed="10" data-type="background">
+        <div id="contact_section" class="container-fluid paddingSection480">
+            <div class="col-md-12 col-sm-12 containerStyle">
+                <div>
+                    <h2 translate>CONTACT</h2>
+                </div>
+                <div>
+                    <div class="col-xs-12 col-sm-12 col-md-8 contactInfo">
+                        <p>Invento Software</p>
+                        <p translate>CONTACT_BODY_A</p>
+                        <p>tel. +48 42 233 54 81</p>
+                        <p>tel. +48 42 233 54 80</p>
+                        <p>fax. +48 42 298 71 27</p>
+                        <p>invento@invento-software.com</p>
+                        <p translate="CONTACT_BODY_B" translate-values="{ nip: 'PL8441861729' }"></p>
+                        <p translate="CONTACT_BODY_C" translate-values="{ reg: '100449642' }"></p>
+
+                        <div id="map-container" class="googleMap "></div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Google Maps -->
+        <script src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            function init_map() {
+                var var_location = new google.maps.LatLng(52.080829, 19.439479);
+
+                var var_mapoptions = {
+                    center: var_location,
+                    zoom: 14,
+                    scrollwheel: false,
+                    draggable: false,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                var var_marker = new google.maps.Marker({
+                    position: var_location,
+                    map: var_map,
+                    title: "Artur Zieliński"
+                });
+
+                var var_map = new google.maps.Map(document.getElementById("map-container"),
+                    var_mapoptions);
+
+                var_marker.setMap(var_map);
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', init_map);
+        </script>
+    </section>
+
+    <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top">
+            <span class="glyphicon glyphicon-chevron-up glyphicon_contact"></span>
+        </a>
+        <p>Artur Zieliński
+            <a href="http://arturzielinski.pl/" title="Visit Invento Software">http://arturzielinski.pl/</a>
+        </p>
+    </footer>
+
+    <script>
+        // Animation slide content
+        $(document).ready(function () {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            });
+
+            // Slide in elements on scroll
+            $(window).scroll(function () {
+                $(".slideanim").each(function () {
+                    var pos = $(this).offset().top;
+
+                    var winTop = $(window).scrollTop();
+                    if (pos < winTop + 600) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });
+
+        // Scroll background
+        $(document).ready(function () {
+            // cache the window object
+            $window = $(window);
+
+            $('section[data-type="background"]').each(function () {
+                // declare the variable to affect the defined data-type
+                var $scroll = $(this);
+
+                $(window).scroll(function () {
+                    // HTML5 proves useful for helping with creating JS functions!
+                    // also, negative value because we're scrolling upwards                             
+                    var yPos = -($window.scrollTop() / $scroll.data('speed'));
+
+                    // background position
+                    var coords = '50% ' + yPos + 'px';
+
+                    // move the background
+                    $scroll.css({
+                        backgroundPosition: coords
+                    });
+                }); // end window scroll
+            }); // end section function
+        }); // close out script
+
+        $(document).ready(function () {
+
+            function imageresize() {
+                var contentwidth = $(window).width();
+
+                console.log(contentwidth);
+
+                if ((contentwidth) < '990') {
+                    console.log('mniej');
+
+                    $('.nav-logo-image').each(function () {
+
+                        console.log('mniej' + $(this).attr('src'));
+
+                        var thisImg = $(this);
+                        thisImg.attr('src', '../images/logo_150.png');
+
+                        console.log('mniej' + $(this).attr('src'));
+                    });
+                } else {
+                    console.log('wience');
+
+                    $('.nav-logo-image').each(function () {
+                        var thisImg = $(this);
+                        thisImg.attr('src', '../images/logo_name_150_100.png');
+                    });
+                }
+            }
+
+            imageresize(); //Triggers when document first loads
+
+            $(window).bind("resize", function () { //Adjusts image when browser resized
+                imageresize();
+            });
+        });
+    </script>
+</body>
+
+</html>
