@@ -62,16 +62,10 @@
                     <div class="collapse navbar-collapse" id="site-nav-bar">
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="index.html">START</a>
+                                <a href="index_default.html">START</a>
                             </li>
                             <li>
-                                <a href="about.html">O FIRMIE</a>
-                            </li>
-                            <li>
-                                <a href="shop.html">USŁUGI</a>
-                            </li>
-                            <li>
-                                <!-- <a href="faq.html">CENNIK</a> -->
+                                <a href="about.html">USŁUGI</a>
                             </li>
                             <li class="active">
                                 <a href="contact.html">KONTAKT</a>
@@ -87,7 +81,7 @@
                 <div class="col-sm-12">
                     <ol class="breadcrumb">
                         <li>
-                            <a href="index.html">Firma</a>
+                            <a href="index_default.html">Firma</a>
                         </li>
                         <li class="active">Kontakt</li>
                     </ol>
@@ -98,53 +92,12 @@
         <!-- /.container -->
         <div class="nutral"></div>
     </section>
-    <!-- /#header -->
-
-    <!-- Contact -->
-    <!-- <section class="contact">
-            <div class="container page-bgc">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <div class="title-box">
-                            <p>Get in touch</p>
-                            <h2 class="title mt0">With us</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="boxed">
-                        <div class="col-sm-12">
-                            <p class="inner-p">
-                                Lorem ipsum dolor sit amet event landing template, consectetur adipisicing elit. Suscipit corrupti facilis event landing template, enim earum numquam minus veritatis nobis accusamus similique.
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
     <div class="row">
 
         <!-- Add Google Maps -->
-        <section id="contact" data-speed="10" data-type="background">
-            <!-- <div id="contact_section" class="container-fluid paddingSection480">
-                <div class="col-md-12 col-sm-12 containerStyle">
-                    <div>
-                        <h2>Kontakt</h2>
-                    </div>
-                    <div>
-                        <div class="col-xs-12 col-sm-12 col-md-8 contactInfo">
-                            
-                            <p align="left">Artur Zieliński</p>
-                            <p>tel. +48 577 330 464</p>
-                            <p>poczta@arturzielinski.pl</p>
-                            <p="CONTACT_BODY_B"-values="{ nip: 'PL8441861729' }"></p>
-                            <p="CONTACT_BODY_C"-values="{ reg: '100449642' }"></p>
+        <section id="contact" data-speed="10" data-type="background" class="col-sm-8">
 
-                            <div id="map-container" class="googleMap "></div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div> -->
-            <div id="contact_section"class="col-md-12 col-sm-12 containerStyle">
+            <div id="contact_section" class="col-md-12 col-sm-12 containerStyle">
                 <div id="map-container" class="googleMap "></div>
             </div>
             <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -177,125 +130,39 @@
                 google.maps.event.addDomListener(window, 'load', init_map);
             </script>
         </section>
-    </div>
-    <div class="row">
-        <div class="boxed">
-            <div class="col-sm-8">
-                <h4>Wiadomość dla nas</h4>
-                <form action="contact.php" class="contact-form" id="contactForm" method="post">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Imię*" id="fname" name="fname" required>
-                            </div>
-                            <!-- /.form-group -->
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nazwisko*" id="lname" name="lname">
-                            </div>
-                            <!-- /.form-group -->
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Email*" id="email" name="email" required>
-                            </div>
-                            <!-- /.form-group -->
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-6">
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Numer telefonu*" id="phone" name="phone">
-                            </div>
-                            <!-- /.form-group -->
-                        </div>
-                        <!-- /.col-sm-6 -->
-                        <div class="col-sm-12">
-                            <div class="form-group">
-                                <textarea class="form-control" rows="6" placeholder="Wiadomość..." name="message"></textarea>
-                            </div>
-                            <!-- /.form-group -->
-                        </div>
-                        <!-- /.col-sm-12 -->
-                        <div class="text-center mt20 col-sm-12">
-                            <button type="submit" class="btn btn-robot pull-left" id="cfsubmit">Wyślij wiadomość</button>
-                        </div>
-                    </div>
-                </form>
-                <div id="contactFormResponse"></div>
-            </div>
-            <!-- /.col-sm-8 -->
-            <div class="col-sm-4">
-                <h4>Kontakt</h4>
-                <div class="row">
-                    <!-- <div class="col-xs-3">
-                        <!-- <img class="imgresponsive" src="assets/images/address.png" alt="con"> -->
-                    <!-- </div> -->-
-                    <div class="col-xs-9">
-                        <h5>ADRES</h5>
-                        <p class="contact-detail">
-                            Janowice 6, 99-120 (koło Piątku)
-                            <br> Polska
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-xs-3">
-                        <!-- <img class="imgresponsive" src="assets/images/phone.png" alt="con"> -->
-                    <!-- </div> -->
-                    <div class="col-xs-9">
-                        <h5>TELEFON</h5>
-                        <p class="contact-detail">
-                            +48 577 330 464
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- <div class="col-xs-3">
-                        <img class="imgresponsive" src="assets/images/support.png" alt="con">
-                    </div> -->
-                    <div class="col-xs-9">
-                        <h5>E-MAIL</h5>
-                        <p class="contact-detail">
-                            poczta@arturzielinski.pl
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-    </section>
 
-    <!-- Footer -->
-    <section id="footer-widget" class="footer-widget">
-        <div class="container header-bg">
+        <div class="col-sm-4">
+            <h4>Kontakt</h4>
             <div class="row">
-                <div class="col-sm-3">
-                    <h3>Strona</h3>
-                    <ul>
-                        <li>
-                            <a href="#">Start</a>
-                        </li>
-                        <li>
-                            <a href="#">O firmie</a>
-                        </li>
-                        <li>
-                            <a href="#">Usługi</a>
-                        </li>
-                        <!-- <li><a href="#">Cennik</a></li> -->
-                        <li>
-                            <a href="#">Kontakt</a>
-                        </li>
-                    </ul>
+                <div class="col-xs-9">
+                    <h5>ADRES</h5>
+                    <p class="contact-detail">
+                        Janowice 6, 99-120 (koło Piątku)
+                        <br> Polska
+                    </p>
                 </div>
-
+            </div>
+            <div class="row">
+                <div class="col-xs-9">
+                    <h5>TELEFON</h5>
+                    <p class="contact-detail">
+                        +48 577 330 464
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-9">
+                    <h5>E-MAIL</h5>
+                    <p class="contact-detail">
+                        poczta@arturzielinski.pl
+                    </p>
+                </div>
             </div>
         </div>
+        <!-- </div> -->
+    </div>
+    </div>
     </section>
-
 
     <!-- Scripts -->
     <script src="assets/js/jquery-1.12.3.min.js"></script>
